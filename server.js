@@ -48,7 +48,7 @@ app.get("/", (req, res) => {
   res.send("HEY THERE WELCOME TO HEROKU SERVER!!!");
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Listening to the port number: ${PORT}`);
 });
